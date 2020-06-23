@@ -1,7 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Yandex.Xml</Title>
+        <Authors>OnlyFart</Authors>
+        <Description>Package to receive search results using https://xml.yandex.ru/
+</Description>
+        <PackageProjectUrl>https://github.com/OnlyFart/Yandex.Xml</PackageProjectUrl>
+        <PackageLicenseUrl>https://licenses.nuget.org/Unlicense</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/OnlyFart/Yandex.Xml</RepositoryUrl>
+        <PackageTags>yandex yandex.xml</PackageTags>
         <TargetFramework>netstandard2.0</TargetFramework>
+        <PackageVersion>1.0.1</PackageVersion>
     </PropertyGroup>
 
 </Project>

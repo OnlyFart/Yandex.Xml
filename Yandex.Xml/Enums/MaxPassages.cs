@@ -5,32 +5,37 @@ namespace Yandex.Xml.Enums {
         /// <summary>
         /// None
         /// </summary>
-        None = 0,
+        None,
         
         /// <summary>
         /// 1
         /// </summary>
-        One = 1,
+        [Description("1")]
+        One,
         
         /// <summary>
         /// 2
         /// </summary>
-        Two = 2,
+        [Description("2")]
+        Two,
         
         /// <summary>
         /// 3
         /// </summary>
-        Three = 3,
+        [Description("3")]
+        Three,
         
         /// <summary>
         /// 4
         /// </summary>
-        Four = 4,
+        [Description("4")]
+        Four,
         
         
         /// <summary>
         /// 5
         /// </summary>
-        Five = 5
+        [Description("5")]
+        Five
     }
 }

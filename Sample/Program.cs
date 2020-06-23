@@ -9,13 +9,13 @@ namespace Sample {
             var yandexXmlProvider = YandexXmlProviderFactory.Create();
             
             // Input real data in ctor
-            var queryParams = new QueryParams("user", "key", "query", "213", SearchType.Com);
-
-            queryParams.Page = 1;
-            queryParams.I10n = I10n.English;
-            queryParams.Filter = Filter.None;
-            queryParams.GroupsOnPage = GroupsOnPage.Hundred;
-
+            var queryParams = new QueryParams("user", "key", "query", "213", SearchType.Com) {
+                Page = 1, 
+                I10n = I10n.English, 
+                Filter = Filter.None, 
+                GroupsOnPage = GroupsOnPage.Hundred
+            };
+            
             var response = yandexXmlProvider.GetStringAsync(queryParams).Result;
             
             Console.WriteLine(response);
