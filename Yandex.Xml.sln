@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yandex.Xml", "Yandex.Xml\Yandex.Xml.csproj", "{3793F802-87B4-45AD-BCC7-492060B82294}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{94F6BB8E-6489-4833-9BC5-94A14E698182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3793F802-87B4-45AD-BCC7-492060B82294}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{94F6BB8E-6489-4833-9BC5-94A14E698182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94F6BB8E-6489-4833-9BC5-94A14E698182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94F6BB8E-6489-4833-9BC5-94A14E698182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94F6BB8E-6489-4833-9BC5-94A14E698182}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
