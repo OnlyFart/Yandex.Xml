@@ -11,7 +11,7 @@ namespace Yandex.Xml.Enums {
         /// <summary>
         /// By appointment time. Direction desc
         /// </summary>
-        [Description("tm.order%3Dascending")]
+        [Description("tm.order%3Ddescending")]
         TmOrderDesc,
         
         /// <summary>

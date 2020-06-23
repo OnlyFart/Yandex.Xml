@@ -6,7 +6,15 @@ using Yandex.Xml.Interfaces;
 using Yandex.Xml.Types;
 
 namespace Yandex.Xml.Builders {
+    /// <summary>
+    /// Builder for queryparams
+    /// </summary>
     public class DefaultQueryBuilder : IQueryBuilder {
+        /// <summary>
+        /// Built queryparams to url
+        /// </summary>
+        /// <param name="queryParams"></param>
+        /// <returns></returns>
         public string Build(QueryParams queryParams) {
             var sb = new StringBuilder($"https://yandex.{queryParams.SearchType.GetDescription()}/search/xml?");
             sb.Append($"user={queryParams.User}&");

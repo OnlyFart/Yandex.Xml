@@ -3,7 +3,7 @@ using System.ComponentModel;
 namespace Yandex.Xml.Enums {
     public enum Filter {
         /// <summary>
-        /// Scrict
+        /// Strict
         /// </summary>
         [Description("strict")]
         Strict,

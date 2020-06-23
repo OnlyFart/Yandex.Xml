@@ -14,6 +14,12 @@ namespace Yandex.Xml.Provider {
             _queryBuilder = queryBuilder;
         }
         
+        /// <summary>
+        /// Get string response from yandex.xml via proxy
+        /// </summary>
+        /// <param name="queryParams">Parameters of request</param>
+        /// <param name="proxy">Proxy</param>
+        /// <returns></returns>
         public async Task<string> GetStringAsync(QueryParams queryParams, WebProxy proxy) {
             var url = _queryBuilder.Build(queryParams);
 
@@ -22,6 +28,12 @@ namespace Yandex.Xml.Provider {
             }
         }
         
+        /// <summary>
+        /// Get stream response from yandex.xml via proxy
+        /// </summary>
+        /// <param name="queryParams">Parameters of request</param>
+        /// <param name="proxy">Proxy</param>
+        /// <returns></returns>
         public async Task<Stream> GetStreamAsync(QueryParams queryParams, WebProxy proxy) {
             var url = _queryBuilder.Build(queryParams);
 
@@ -29,7 +41,12 @@ namespace Yandex.Xml.Provider {
                 return await client.GetStreamAsync(url);
             }
         }
-
+        
+        /// <summary>
+        /// Get string response from yandex.xml
+        /// </summary>
+        /// <param name="queryParams">Parameters of request</param>
+        /// <returns></returns>
         public async Task<string> GetStringAsync(QueryParams queryParams) {
             var url = _queryBuilder.Build(queryParams);
 
@@ -38,6 +55,11 @@ namespace Yandex.Xml.Provider {
             }
         }
         
+        /// <summary>
+        /// Get stream response from yandex.xml
+        /// </summary>
+        /// <param name="queryParams">Parameters of request</param>
+        /// <returns></returns>
         public async Task<Stream> GetStreamAsync(QueryParams queryParams) {
             var url = _queryBuilder.Build(queryParams);
 
