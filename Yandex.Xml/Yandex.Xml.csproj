@@ -4,15 +4,15 @@
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>Yandex.Xml</Title>
         <Authors>OnlyFart</Authors>
-        <Description>Package to receive search results using https://xml.yandex.ru/
+        <Description>Client for https://xml.yandex.ru/
 </Description>
         <PackageProjectUrl>https://github.com/OnlyFart/Yandex.Xml</PackageProjectUrl>
         <PackageLicenseUrl>https://licenses.nuget.org/Unlicense</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/OnlyFart/Yandex.Xml</RepositoryUrl>
         <PackageTags>yandex yandex.xml yandexxml</PackageTags>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>1.0.2</PackageVersion>
-        <PackageReleaseNotes>Fix SortBy descending order</PackageReleaseNotes>
+        <PackageVersion>2.0.0</PackageVersion>
+        <PackageReleaseNotes>Add yandex xml response parser</PackageReleaseNotes>
     </PropertyGroup>
 
 </Project>

@@ -5,12 +5,9 @@ namespace Yandex.Xml.Types {
     /// Parameters of yandex.xml request <see cref="https://xml.yandex.ru/test/"/>
     /// </summary>
     public class QueryParams {
-        public QueryParams(string user, string key, string query, string lr, SearchType searchType) {
+        public QueryParams(string user, string key) {
             User = user;
             Key = key;
-            Query = query;
-            Lr = lr;
-            SearchType = searchType;
         }
         
         /// <summary>

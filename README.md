@@ -3,18 +3,25 @@
 
 Using
 ```
-var yandexXmlProvider = YandexXmlProviderFactory.Create();
+var yandexXmlClient = YandexXmlClientFactory.Create();
             
-// Input real data in ctor
-var queryParams = new QueryParams("user", "key", "query", "213", SearchType.Com);
+// Input real user and key in ctor
+var queryParams = new QueryParams("<your_user>", "<your_key>") {
+	Query = "test",
+	Lr = "213",
+	SearchType = SearchType.Com,
+	Page = 1, 
+	I10n = I10n.English, 
+	Filter = Filter.None, 
+	GroupsOnPage = GroupsOnPage.Hundred
+};
 
-queryParams.Page = 1;
-queryParams.I10n = I10n.English;
-queryParams.Filter = Filter.None;
-queryParams.GroupsOnPage = GroupsOnPage.Hundred;
+using (var client = new HttpClient()) {
+	var response = yandexXmlClient.GetParsedAsync(client, queryParams).Result;
+	foreach (var yandexXmlItem in response.Items) {
+		Console.WriteLine(yandexXmlItem.Url);
+	}
+}
 
-var response = yandexXmlProvider.GetStringAsync(queryParams).Result;
-
-Console.WriteLine(response);
 Console.Read();
 ```
