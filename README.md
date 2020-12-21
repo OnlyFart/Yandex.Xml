@@ -2,7 +2,7 @@
 [![NuGet version (Yandex.Xml)](https://img.shields.io/nuget/v/Yandex.Xml)](https://www.nuget.org/packages/Yandex.Xml/)
 
 # Usage
-```
+```csharp
 var yandexXmlClient = YandexXmlClientFactory.Create();
             
 // Input real user and key in ctor
